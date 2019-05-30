@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Book Recommendations | Bookworm Online Shop</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- for data tables-->
+<!--   <link href="css/dataTables.bootstrap.min.css" rel="stylesheet"> -->
+<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">    -->
+
+
+<!-- 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+
+ -->
+
+
+
+<!-- <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+
+
+	<script src="js/jquery-3.2.1.slim.js"></script>
+  <!--error found in inspect undefined typeof jquery in bootstrap.min.js not included js/boostrap.min.js-->
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/script.js"></script>
+
+	<link rel="stylesheet" href="css/bookshop-all-genre.css">
+<!-- 	<script>
+$(document).ready(function(){
+    $('#myTable').dataTable();
+});
+</script> -->
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home.html"><span class="eliza">Bookworm </span><br> &nbsp;<span class="glyphicon glyphicon-book"></span> Shop</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <!-- <li><a href="home.html">Home Page</a></li> -->
+        <li><a href="contacts.html">Contact Us</a></li>
+        <li><a href="all_genre.html">All genre</a></li>
+        <li class="active"><a href="recommendations.html">Recommendations<span class="sr-only">(current)</span></a></li>
+        <!-- <li><a href="#">Blog</a></li> -->
+
+      </ul>
+ 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+         <li><a href="login.html">Log Out</a></li>  
+          <li class="username"><a href="#">Hi! Username</a></li>  
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="parallax-recommendation">
+  <div class="recommendation-title">
+    <div class="container">
+      <h1 class="br-title">Book Recommendations</h1>
+      <p class="br-para">"Where you send and view the popular books message by the readers."</p>
+    </div>
+  </div>
+</div>
+<div class="search-recommend">
+  <div class="container">
+      <!-- Split button -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-default" id="dropdown-bg">Book Genre List</button>
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Travel Book</a></li>
+        <li><a href="#">Programming Book</a></li>
+        <li><a href="#">Cooking Book</a></li>
+        <li><a href="#">Educational Book</a></li>
+        <li><a href="#">Inspirational Book</a></li>
+        <li><a href="#">Novel Book</a></li>
+        <li><a href="#">Science Fiction Book</a></li>
+        <li><a href="#">Children's Book</a></li>
+        <li><a href="#">Lifestyle Book</a></li>
+         <!--  <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li> -->
+      </ul>
+    </div>
+     <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search book title.." aria-label="Search" id="search-recommend-book">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true" id="button-search-bt"></span></button>
+    </form>
+  </div>
+</div>
+
+<!-- https://www.bookbub.com/blog/2018/01/23/librarian-book-recommendations-2018 -->
+
+<div class="container">
+   <h2 class="title-book-for-sale">Books Recommended List</h2>
+     <div class="row">
+       <div class="col_bookrecommend">
+          <img src="uploads/recommend-book1.jpg" class="img_recommend">
+          <div class="hover_opacity">
+<!-- 
+            <div class="hover_click">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div> -->
+          </div>
+          <h4 class="book_title">Harry Potter and the Order of the Phoenix</h4>
+          <h5 class="book_author">J.K. Rowling</h5>
+          <h5 class="price">PHP 2,999</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+        <div class="col_bookrecommend">
+          <img src="uploads/recommend-book2.jpg" class="img_recommend">
+          <h4 class="book_title">Harry Potter and the Half-Blood Prince</h4>
+          <h5 class="book_author">J.K. Rowling</h5>
+          <h5 class="price">PHP 2,999</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+        <div class="col_bookrecommend">
+          <img src="uploads/recommend-book3.jpg" class="img_recommend">
+          <h4 class="book_title">Harry Potter and the Prisoner of Azkaban</h4>
+          <h5 class="book_author">J.K. Rowling</h5>
+          <h5 class="price">PHP 2,999</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+        <div class="col_bookrecommend">
+          <img src="uploads/recommend-book4.jpg" class="img_recommend">
+          <h4 class="book_title">How to Stop Time</h4>
+          <h5 class="book_author">Matt Haig</h5>
+          <h5 class="price">PHP 690.00</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+      </div>
+</div>
+<div class="container">
+  <div class="row">
+   <div class="col_bookrecommend">
+      <img src="uploads/recommend-book5.jpg" class="img_recommend">
+      <h4 class="book_title">Surprise Me</h4>
+      <h5 class="book_author">Sophie Kinsella</h5>
+      <h5 class="price">PHP 2,100</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+    <div class="col_bookrecommend">
+      <img src="uploads/recommend-book6.jpg" class="img_recommend">
+      <h4 class="book_title">Carnegie's Maid</h4>
+      <h5 class="book_author">Marie Benedict</h5>
+      <h5 class="price">PHP 1,260</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+    <div class="col_bookrecommend">
+      <img src="uploads/recommend-book7.jpg" class="img_recommend">
+      <h4 class="book_title">Dear Universe</h4>
+      <h5 class="book_author">Pierra Calasanz-Labrador</h5>
+      <h5 class="price">PHP 630.00</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+    <div class="col_bookrecommend">
+      <img src="uploads/recommend-book8.jpg" class="img_recommend">
+      <h4 class="book_title">Dear Alex, We're Dating. Tama, Mali?! Love Catherine</h4>
+      <h5 class="book_author">Alex Gonzaga</h5>
+      <h5 class="price">PHP 590.00</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+   <div class="col_bookrecommend">
+      <img src="uploads/recommend-book9.jpg" class="img_recommend">
+      <h4 class="book_title">The Daily Poet</h4>
+      <h5 class="book_author">Kelli Russell Agodon & Martha Silano</h5>
+      <h5 class="price">PHP 990.00</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+    <div class="col_bookrecommend">
+      <img src="uploads/recommend-book10.png" class="img_recommend">
+      <h4 class="book_title">While You're Waiting</h4>
+      <h5 class="book_author">Rissa Singson Kawpeng</h5>
+      <h5 class="price">PHP 490.00</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+    <div class="col_bookrecommend">
+      <img src="uploads/recommend-book11.jpg" class="img_recommend">
+      <h4 class="book_title">Christian Dating Simplified</h4>
+      <h5 class="book_author">Aaron K. Torch</h5>
+      <h5 class="price">PHP 270.00</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+    <div class="col_bookrecommend">
+      <img src="uploads/recommend-book16.jpg" class="img_recommend">
+      <h4 class="book_title">Poetry By Heart</h4>
+      <h5 class="book_author">Andrew Motion</h5>
+      <h5 class="price">PHP 975.00</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+   <div class="col_bookrecommend">
+      <img src="uploads/recommend-book13.jpg" class="img_recommend">
+      <h4 class="book_title">Best Island In The World: The Philippines</h4>
+      <h5 class="book_author">Lonely Planet</h5>
+      <h5 class="price">PHP 590.00</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+    <div class="col_bookrecommend">
+      <img src="uploads/recommend-book14.jpg" class="img_recommend">
+      <h4 class="book_title">Best Island In The World: The Philippines</h4>
+      <h5 class="book_author">Lonely Planet</h5>
+      <h5 class="price">PHP 590.00</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+    <div class="col_bookrecommend">
+      <img src="uploads/recommend-book15.jpg" class="img_recommend">
+      <h4 class="book_title">Best Island In The World: The Philippines</h4>
+      <h5 class="book_author">Lonely Planet</h5>
+      <h5 class="price">PHP 590.00</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+    <div class="col_bookrecommend">
+      <img src="uploads/recommend-book12.jpg" class="img_recommend">
+      <h4 class="book_title">Best Island In The World: The Philippines</h4>
+      <h5 class="book_author">Lonely Planet</h5>
+      <h5 class="price">PHP 590.00</h5>
+      <a href="#"><button type="submit" name="addcart" class="btn btn-defaultt"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+   </div>
+  </div>
+</div>
+<div class="recommend-book">
+  <div class="container">
+    <div class="recommend-bb">
+      <div class="row">
+        <div class="col-6 col-md-4">
+           <img src="uploads/book-recommend.jpg" class="image-recommend">
+        </div>
+        <div class="col-12 col-md-8">
+          <h2 class="recommend-pk">What's your favorite book you want to share?</h2>
+         <p class="recommend-para">Share the books that you love which you want to recommend to the book readers by clicking the button.</p>
+         <input type="send-recommend" class="form-control" id="send-recommend-book" aria-describedby="inspireHelp" placeholder=" Enter your inspiring book here"required>
+         <button type="submit" class="inspires-me-button"> <span class="glyphicon glyphicon-book"></span> Inspires Me</button>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+</div>
+<!-- <footer class="footer">
+      <div class="container">
+       <h3 class="footer-title">Read, Learn & Share!</h3> -->
+       <!-- <h3><span class="glyphicon glyphicon-book"></span></h3> -->
+ <!--         <h4 class="footer-detail">Knowledge comes from reading. Every single word has full of adventure.</h4>
+         <img src="uploads/github-ico.png" class="icon">
+         <img src="uploads/gmail-ico.png" class="icon">
+         <img src="uploads/hangout-ico.png" class="icon">
+         <img src="uploads/linkedin-ico.png" class="icon">
+         <img src="uploads/twitter-ico.png" class="icon">
+         <img src="uploads/instagram-icon.png" class="icon">
+         <h5 class="copyright">Bookworm Online Shop &copy; 2017 </h5>
+       </div>
+  </footer> -->
+  <!-- https://bootsnipp.com/snippets/featured/footer-using-bootstrap-4 -->
+<footer class="footer">
+  <div class="container">
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <h5><span class="bookworm-footer">Bookworm</span> <br> &nbsp;<span class="glyphicon glyphicon-book" id="footer-icon"></span><span class="shop-footer"> Shop</span></h5>
+      <h5 class="footer-title">Read, Learn & Share!</h5>
+      <h5 class="footer-detail">Knowledge comes from reading.<br> Every single word has full of adventure.</h5>
+  </div>  
+    <div class="col-xs-12 col-sm-4 col-md-4">
+     <h5 class="footer-lo">Our Location Office</h5>
+     <h5 class="footer-olo">Brgy. J. Dela Peña Marikina City, Philippines</h5>
+     <h5 class="footer-olo">Phone: (+63) 955-9259-710</h5>
+     <h5 class="footer-olo">Mail: elizairaramos07@gmail.com</h5>
+     <h5 class="footer-olo">Stay in Touch: 
+      <a href="https://github.com/Elizaira"><img src="uploads/github-ico.png" class="icon"></a>
+      <a href="https://gmail.com"><img src="uploads/gmail-ico.png" class="icon"></a>
+      <a href="https://hangouts.google.com"><img src="uploads/hangout-ico.png" class="icon"></a>
+      <a href="www.linkedin.com/in/eliza-ira-ramos-13750b141"><img src="uploads/linkedin-ico.png" class="icon"></a>
+      <a href="https://twitter.com/orangeelaira"><img src="uploads/twitter-ico.png" class="icon"></a>
+      <a href="https://instagram.com/elaira_11"><img src="uploads/instagram-icon.png" class="icon"></a>
+     </h5>
+  </div>  
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <h5 class="footer-lo">Bookworm Information</h5>
+      <div class="row">
+      <div class="col-12 col-md-6" id="link-footer-media">
+      <ul class="inside">
+        <li id="sample"><a href="home.html" class="footer-link">Home</a></li>
+        <li id="sample"><a href="contacts.html" class="footer-link">Contact Us</a></li>
+        <li id="sample"><a href="all_genre.html" class="footer-link">All genre</a></li>
+      
+      </div>
+      <div class="col-6 col-md-6" id="link-footer-media2">
+        <li class="footer-active" id="sample"><a href="recommendations.html" class="footer-link">Recommendations<span class="sr-only">(current)</span></a></li>
+        <li id="sample"><a href="cart.html" class="footer-link">Cart</a></li>
+        <li id="sample"><a href="login.html" class="footer-link">Log Out</a></li>
+
+      </div>
+      </ul>
+  </div> 
+</div>
+
+</footer>
+<div class="footer-bottom">
+  <div class="container">
+     <h5 class="copyright">Bookworm Online Shop &copy; 2017 </h5>
+  </div>
+</div>
+</body>
+</html>

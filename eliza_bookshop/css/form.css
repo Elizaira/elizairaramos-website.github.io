@@ -1,0 +1,204 @@
+body{
+	margin:2%;
+	padding:0;
+	background-color:#b3b3b3;
+}
+
+.container{
+	border:1px solid #ffffff;
+	width:75%;
+	margin:0 auto;
+	background-color:#f9fbff;
+	
+}
+.row{
+	display:flex;
+}
+
+.col{
+	flex:1;
+}
+.col-2{
+	flex:2;
+}
+
+.col-3{
+	flex:3;
+}
+.col-4{
+	flex:4;
+}
+.col-5{
+	flex:5;
+}
+#header-title{
+	text-align:center;
+	background-color:#006666;
+	color:#ffffff;
+	font-family:Arial;
+}
+#input-customer{
+	text-align: center;
+	margin-top:10px;
+}
+#name{
+	margin:15x;
+	text-align: center;
+	padding:5px;
+	width:90%;
+	background-color:#9acbce;
+	color:#000;
+	border:1px solid #9acbce;
+	border-radius:5px;
+}
+#number{
+	margin:5px;
+	text-align: center;
+	padding:5px;
+	width:90%;
+	background-color:#9acbce;
+	color:#000;
+	border:1px solid #9acbce;
+	border-radius:5px;
+}
+#menus{
+	margin-left:50px;
+	font-family: Arial;
+}
+.menu-title{
+	color:#006666;
+}
+#salmon{
+	margin:6px;
+}
+#roast{
+	margin:6px;
+}
+#tbone{
+	margin:6px;
+}
+#ribeye{
+	margin:6px;
+}
+#wagyu{
+	margin:6px;
+}
+
+#salmon_count{
+	margin:3px;
+	background-color:#9acbce;
+	color:#000;
+	border:1px solid #9acbce;
+	border-radius:5px;
+	width:50%;
+	text-align: center;
+}
+#roast_count{
+	margin:3px;
+	background-color:#9acbce;
+	color:#000;
+	border:1px solid #9acbce;
+	border-radius:5px;
+	width:50%;
+	text-align: center;
+}
+#tbone_count{
+	margin:3px;
+	background-color:#9acbce;
+	color:#000;
+	border:1px solid #9acbce;
+	border-radius:5px;
+	width:50%;
+	text-align: center;
+}
+#ribeye_count{
+	margin:3px;
+	background-color:#9acbce;
+	color:#000;
+	border:1px solid #9acbce;
+	border-radius:5px;
+	width:50%;
+	text-align: center;
+}
+#wagyu_count{
+	margin:3px;
+	background-color:#9acbce;
+	color:#000;
+	border:1px solid #9acbce;
+	border-radius:5px;
+	width:50%;
+	text-align: center;
+}
+#button-reset{
+	text-align: center;
+	font-family: Arial;
+}
+#button-totals{
+	text-align: center;
+	font-family: Arial;
+	background-color: #b3b3b3;
+
+}
+#tbill{
+	background-color:#006666;
+	color:#ffffff;
+	border:1px solid #006666;
+	border-radius:5px;
+	width:20%;
+	padding:1%;
+	
+}
+#tbill:hover{
+	color:#9acbce;
+}
+
+#reset{
+	background-color:#006666;
+	color:#ffffff;
+	border:1px solid #006666;
+	border-radius:5px;
+	width:20%;
+	padding:1%;
+}
+#reset:hover{
+	color:#9acbce;
+}
+#output{
+	width:80%;
+	background-color:#9acbce;
+	margin:0 auto;
+	border-radius:5px;
+	font-family:Arial;
+	margin-top:2%;
+}
+table{
+	border:none;
+	text-align:left;
+	border-collapse: collapse;
+    width: 100%;
+}
+td,th{
+	border:none;
+}
+th{
+	width:50%;
+}
+
+/*To show/hide menus when clicked the checkbox*/
+/*
+#show_salmon{
+	display:none;
+}
+#show_roast{
+	display:none;
+}
+#show_tbone{
+	display:none;
+}
+#show_ribeye{
+	display:none;
+}
+#show_wagyu{
+	display:none;
+}
+*/

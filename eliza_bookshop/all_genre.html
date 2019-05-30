@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Genre | Bookworm Online Shop</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="js/jquery-3.2.1.slim.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+	<link rel="stylesheet" href="css/bookshop-all-genre.css">
+	
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home.html"><span class="eliza">Bookworm </span><br> &nbsp;<span class="glyphicon glyphicon-book"></span> Shop</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <!-- <li><a href="home.html">Home Page</a></li> -->
+        <li><a href="contacts.html">Contact Us</a></li>
+        <li class="active"><a href="all_genre.html">All genre <span class="sr-only">(current)</span></a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <!-- <li><a href="#">Blog</a></li> -->
+
+      </ul>
+ 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+         <li><a href="login.html">Log Out</a></li>  
+          <li class="username"><a href="#">Hi! Username</a></li>  
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="parallax-all-genre">
+  <div class="all_genre_background">
+    <div class="container">
+      <h1 class="ag_welcome">All Genre of Books Collection</h1>
+     <p class="seemore"><a class="page-scroll" href="#seemore" id="see-more">See More <span class="glyphicon glyphicon-menu-down"></a></span></p>
+    </div>
+  </div> 
+</div>
+<div class="container">
+  <div class="book-menus">
+    <div class="row">
+       <div class="col-6 col-md-4">
+         <img src="uploads/travelbook-img.jpg" id="book-menus-img">
+         <div class="buttons-book-menus"><button type="button" id="button-in-menu">Get This Book</button></div>
+       </div>
+
+       <div class="col-6 col-md-4">
+         <img src="uploads/programming-book-img.jpg" id="book-menus-img">
+         <div class="buttons-book-menus"><button type="button" id="button-in-menu">Get This Book</button></div>
+       </div>
+
+       <div class="col-6 col-md-4">
+         <img src="uploads/cooking-book-img.jpg" id="book-menus-img">
+         <div class="buttons-book-menus"><button type="button" id="button-in-menu">Get This Book</button></div>
+       </div>
+    </div>
+  </div>
+</div>
+<div class="book-featured">
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-auto">
+        <img src="uploads/best-seller.jpg" id="best-seller-img">
+      </div>
+      <div class="col co-md-auto">
+        <img src="uploads/best-seller-back.jpg" id="best-seller-img" width="248px;">
+      </div>
+      <div class="col">
+        <h4 class="feature-book-fb">Feature Book</h4>
+        <h3 class="feature-book-bt">Dictionary of Idioms and Their Origin</h3>
+        <h6 class="feature-book-author">Linda and Roger Flavell</h6>
+        <p class="feature-book-para">Examining the origins of everyday idioms and expressions, this book explains their meanings and gives examples of their use. Interspersed with the individual entries are mini-essays on recurring themes, and also included are dates of first use and guidance on correct or current usage.</p>
+         <button type="button" id="feature-book-button">Get This Book</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<section class="page-scroll" id="seemore">
+  <div class="container-fluid">
+    <h2 class="title-book-for-sale">Travel Books</h2>
+     <div class="row">
+       <div class="col-books">
+          <img src="uploads/travel-book-list1.jpg" class="image">
+          <h4 class="book_title">Best Island In The World: The Philippines</h4>
+          <h5 class="book_author">Lonely Planet</h5>
+          <h5 class="price">PHP 590.00</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default" id="btn"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/travel-book-list7.jpg" class="image">
+         <h4 class="book_title">Travel With Casey</h4>
+         <h5 class="book_author">Benoit Denizet-Lewis</h5>
+         <h5 class="price">PHP 500.00</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/travel-book-list3.png" class="image">
+         <h4 class="book_title">Basta Trip Mo</h4>
+         <h5 class="book_author">Enchong Dee</h5>
+         <h5 class="price">PHP 590.00</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+          <img src="uploads/travel-book-list4.png" class="image">
+          <h4 class="book_title">Traveler's Notebook: Insights from Life's Journey</h4>
+          <h5 class="book_author">Marlene Legaspi-Munar</h5>
+          <h5 class="price">PHP 600.00</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+     <div class="row">
+       <div class="col-books">
+          <img src="uploads/travel-book-list6.jpg" class="image">
+          <h4 class="book_title">Tokyo: Style Guide</h4>
+          <h5 class="book_author">Jane, Lawson</h5>
+          <h5 class="price">PHP 1,000</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/travel-book-list8.jpg" class="image">
+         <h4 class="book_title">South Korea</h4>
+         <h5 class="book_author">Insight Guides</h5>
+         <h5 class="price">PHP 1,000</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/travel-book-list9.jpg" class="image">
+         <h4 class="book_title">Italy</h4>
+         <h5 class="book_author">Insight Guides</h5>
+         <h5 class="price">PHP 1,000</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+          <img src="uploads/travel-book-list10.jpg" class="image">
+          <h4 class="book_title">Western Europe</h4>
+          <h5 class="book_author">Insight Guides</h5>
+          <h5 class="price">PHP 1,000</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+     </div>
+  </div>
+  <div class="container-fluid">
+   <h2 class="title-book-for-sale">Programming Books</h2>
+     <div class="row">
+       <div class="col-books">
+          <img src="uploads/programming-book-list1.png" class="image">
+          <h4 class="book_title">Practical Game Design</h4>
+          <h5 class="book_author">Adam Kramarzewski, Ennio De Nucci</h5>
+          <h5 class="price">PHP 2,500</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/programming-book-list3.png" class="image">
+         <h4 class="book_title">2D Game Programme in Unity</h4>
+         <h5 class="book_author">Dr. Ashley Godbold</h5>
+         <h5 class="price">PHP 3,500</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/programming-book-list4.png" class="image">
+         <h4 class="book_title">Learning C++ by Creating Games with Unreal Engine 4</h4>
+         <h5 class="book_author">Nicholas Helish</h5>
+         <h5 class="price">PHP 2,500</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+          <img src="uploads/programming-book-list5.png" class="image">
+          <h4 class="book_title">Aws Certified Solutions Architect- Associate- Prep Course</h4>
+          <h5 class="book_author">Colibri Ltd.</h5>
+          <h5 class="price">PHP 3,040</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+     </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+       <div class="col-books">
+          <img src="uploads/programming-book-list2.png" class="image">
+          <h4 class="book_title">Framework Design Guidelines</h4>
+          <h5 class="book_author">Krzysztof Cwalina & Brad Abrams</h5>
+          <h5 class="price">PHP 2,900</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/programming-book-list6.jpg" class="image">
+         <h4 class="book_title">Coding for Beginnerrs Using Scratch</h4>
+         <h5 class="book_author">Usborne</h5>
+         <h5 class="price">PHP 1,500</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/programming-book-list7.jpg" class="image">
+         <h4 class="book_title">Introduction to Computer Programming</h4>
+         <h5 class="book_author">Usborne Electronics</h5>
+         <h5 class="price">PHP 2,410</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+          <img src="uploads/programming-book-list8.jpg" class="image">
+          <h4 class="book_title">Programming From the Ground Up</h4>
+          <h5 class="book_author">Jonathan Bartlett</h5>
+          <h5 class="price">PHP 2,000</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+     </div>
+  </div>
+  <div class="container-fluid">
+    <h2 class="title-book-for-sale">Cooking Books</h2>
+     <div class="row">
+       <div class="col-books">
+          <img src="uploads/cooking-book-list.jpg" class="image">
+          <h4 class="book_title">Classical Indian Cooking</h4>
+          <h5 class="book_author">Umm Maryam</h5>
+          <h5 class="price">PHP 680.00</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/cooking-book-list6.jpg" class="image">
+         <h4 class="book_title">Japanese Cook Book</h4>
+         <h5 class="book_author">Ted Alung</h5>
+         <h5 class="price">PHP 500.00</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/cooking-book-list8.jpg" class="image">
+         <h4 class="book_title">The Complete Soup Maker Recipe Book</h4>
+         <h5 class="book_author">Charlie Mason</h5>
+         <h5 class="price">PHP 790.00</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+          <img src="uploads/cooking-book-list9.jpg" class="image">
+          <h4 class="book_title">Pastry Recipes</h4>
+          <h5 class="book_author">Les Ilagan</h5>
+          <h5 class="price">PHP 600.00</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+     </div>
+  </div>
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col-books">
+          <img src="uploads/cooking-book-list4.jpg" class="image">
+          <h4 class="book_title">The Pastry Faux Chef</h4>
+          <h5 class="book_author">Mimi Shotland Fix</h5>
+          <h5 class="price">PHP 990.00</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/cooking-book-list12.jpg" class="image">
+         <h4 class="book_title">Easy Vietnamese Cookbook</h4>
+         <h5 class="book_author">Chef Maggie Chow</h5>
+         <h5 class="price">PHP 690.00</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+         <img src="uploads/cooking-book-list13.jpg" class="image">
+         <h4 class="book_title">Filipino Cookbook</h4>
+         <h5 class="book_author">Martha Stone</h5>
+         <h5 class="price">PHP 890.00</h5>
+         <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+       <div class="col-books">
+          <img src="uploads/cooking-book-list14.jpg" class="image">
+          <h4 class="book_title">Filipino Favorites</h4>
+          <h5 class="book_author">Norma Olizon-Chikiamco</h5>
+          <h5 class="price">PHP 590.00</h5>
+          <a href="#"><button type="submit" name="addcart" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></a>
+       </div>
+     </div>
+  </div>
+</section>
+<div class="book-recommendations">
+  <div class="container">
+    <h2 class="other-genre-books">Other Books Genre</h2>
+    <div class="row">
+       <div class="col-6 col-md-4">
+         <img src="uploads/book-genre-educ.jpg" id="book-menus-img">
+         <div class="buttons-book-menus"><button type="button" id="button-in-menu">Get This Book</button></div>
+       </div>
+
+       <div class="col-6 col-md-4">
+         <img src="uploads/book-genre-inspi.jpg" id="book-menus-img">
+         <div class="buttons-book-menus"><button type="button" id="button-in-menu">Get This Book</button></div>
+       </div>
+
+       <div class="col-6 col-md-4">
+         <img src="uploads/book-genre-novel.jpg" id="book-menus-img">
+         <div class="buttons-book-menus"><button type="button" id="button-in-menu">Get This Book</button></div>
+       </div>
+    </div>
+    <div class="row">
+       <div class="col-6 col-md-4">
+         <img src="uploads/book-genre-scifi.jpg" id="book-menus-img">
+         <div class="buttons-book-menus"><button type="button" id="button-in-menu">Get This Book</button></div>
+       </div>
+
+       <div class="col-6 col-md-4">
+         <img src="uploads/book-genre-children.jpg" id="book-menus-img">
+         <div class="buttons-book-menus"><button type="button" id="button-in-menu">Get This Book</button></div>
+       </div>
+
+       <div class="col-6 col-md-4">
+         <img src="uploads/book-genre-lifesty.jpg" id="book-menus-img">
+         <div class="buttons-book-menus"><button type="button" id="button-in-menu">Get This Book</button></div>
+       </div>
+    </div>
+  </div>
+</div>
+<div class="parallax-all-genre">
+  <div class="parallax-contact-us-ag">
+    <div class="container">
+      <h2 class="contact-us-ag-title">Looking for more books available?</h2>
+      <p class="contact-us-ag-para">Know all the books we sell and how you can avail promos by contacting us. We highly appreciate your efforts <a class="arrow" href="contacts.html"><span class="glyphicon glyphicon-arrow-right"></a></span></p>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <h5><span class="bookworm-footer">Bookworm</span> <br> &nbsp;<span class="glyphicon glyphicon-book" id="footer-icon"></span><span class="shop-footer"> Shop</span></h5>
+      <h5 class="footer-title">Read, Learn & Share!</h5>
+      <h5 class="footer-detail">Knowledge comes from reading.<br> Every single word has full of adventure.</h5>
+  </div>  
+    <div class="col-xs-12 col-sm-4 col-md-4">
+     <h5 class="footer-lo">Our Location Office</h5>
+     <h5 class="footer-olo">Brgy. J. Dela Peña Marikina City, Philippines</h5>
+     <h5 class="footer-olo">Phone: (+63) 955-9259-710</h5>
+     <h5 class="footer-olo">Mail: elizairaramos07@gmail.com</h5>
+     <h5 class="footer-olo">Stay in Touch: 
+      <a href="https://github.com/Elizaira"><img src="uploads/github-ico.png" class="icon"></a>
+      <a href="https://gmail.com"><img src="uploads/gmail-ico.png" class="icon"></a>
+      <a href="https://hangouts.google.com"><img src="uploads/hangout-ico.png" class="icon"></a>
+      <a href="www.linkedin.com/in/eliza-ira-ramos-13750b141"><img src="uploads/linkedin-ico.png" class="icon"></a>
+      <a href="https://twitter.com/orangeelaira"><img src="uploads/twitter-ico.png" class="icon"></a>
+      <a href="https://instagram.com/elaira_11"><img src="uploads/instagram-icon.png" class="icon"></a>
+     </h5>
+  </div>  
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <h5 class="footer-lo">Bookworm Information</h5>
+      <div class="row">
+      <div class="col-12 col-md-6" id="link-footer-media">
+      <ul class="inside">
+        <li id="sample"><a href="home.html" class="footer-link">Home</a></li>
+        <li id="sample"><a href="contacts.html" class="footer-link">Contact Us</a></li>
+        <li  class="footer-active" id="sample"><a href="all_genre.html" class="footer-link">All genre<span class="sr-only">(current)</span></a></li>
+      </div>
+      <div class="col-6 col-md-6" id="link-footer-media2">
+        <li id="sample"><a href="recommendations.html" class="footer-link">Recommendations</a></li>
+        <li id="sample"><a href="cart.html" class="footer-link">Cart</a></li>
+        <li id="sample"><a href="login.html" class="footer-link">Log Out</a></li>
+      </div>
+      </ul>
+  </div> 
+</div>
+
+</footer>
+<div class="footer-bottom">
+  <div class="container">
+     <h5 class="copyright">Bookworm Online Shop &copy; 2017 </h5>
+  </div>
+</div>
+
+
+<!--  <footer class="footer">
+      <div class="container">
+       <h3 class="footer-title">Read, Learn & Share!</h3>
+       <h3><span class="glyphicon glyphicon-book"></span></h3>
+         <h4 class="footer-detail">Knowledge comes from reading. Every single word has full of adventure.</h4>
+         <img src="uploads/github-ico.png" class="icon">
+         <img src="uploads/gmail-ico.png" class="icon">
+         <img src="uploads/hangout-ico.png" class="icon">
+         <img src="uploads/linkedin-ico.png" class="icon">
+         <img src="uploads/twitter-ico.png" class="icon">
+         <img src="uploads/instagram-icon.png" class="icon">
+         <h5 class="copyright">Bookworm Online Shop &copy; 2017 </h5>
+       </div>
+  </footer> -->
+</body>
+</html>
