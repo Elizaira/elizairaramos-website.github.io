@@ -1,0 +1,233 @@
+body{
+		margin:0;
+		padding:0;
+}
+.container{
+	width:80%;
+	margin:0 auto;
+
+}
+#header{
+	margin:0;
+	background-color:#232A31;
+	padding:1%;
+}
+.row{
+	display:flex;
+}
+/*for columns to align them base on the sizes you want*/
+.col{
+	margin-left:15px;
+	flex:1;
+}
+
+.col-2{
+	flex:2;
+}
+
+.col-3{
+	flex:3;
+}
+.col-4{
+	flex:4;
+}
+.col-5{
+	flex:5;
+}
+.col-6{
+	flex:6;
+}
+.col-7{
+	flex:7;
+}
+.col-8{
+	flex:8;
+}
+.col-9{
+	flex:9;
+}
+.col-10{
+	flex:10;
+}
+.inline-nav{
+	display:inline;
+	text-decoration:none;
+}
+.sign-up{
+	color:white;
+	background-color:#2CC76A;
+	border:1px solid #2CC76A;
+	border-radius:2px;
+	padding:1%;
+}
+.nav{
+	text-decoration:none;
+	color:white;
+	font-family:Microsoft Sans Serif;
+	margin:5px;
+}
+.nav:hover{
+	color:green;
+}
+a.active{
+	color:green;
+}
+
+#header2{
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-image:url('../images/header-bg.jpg');
+	text-align:center;
+}
+.title1{
+	text-align:center;
+	color:white;
+	margin:0px;
+	padding-top:10%;
+	font-size:50px;
+	font-family: Microsoft Sans Serif;
+}
+.para1{
+	color:white;
+	font-family:Microsoft Sans Serif;
+	text-align:center;
+}
+
+.explore-features{
+	padding:10px;
+	margin-bottom:80px;
+	margin-right:10px;
+	width:15%;
+	color:#ffffff;
+	background-color:#2CC76A;
+	border:1px solid #2CC76A;
+	border-radius:2px;
+}
+.plan-pricing{
+	padding:10px;
+	margin-bottom:80px;
+	width:15%;
+	color:#ffffff;
+	background-color:#2DB6D8;
+	border:1px solid #2DB6D8;;
+	border-radius:2px;
+}
+
+#header3{
+	text-align: center;
+	margin-top:50px;
+}
+.header-center-title{
+	font-family: Microsoft Sans Serif;
+}
+.para-header3-title{
+	color:#333333;
+	font-family:Microsoft Sans Serif;
+	text-align: center;
+}
+.more-features{
+	color:#333333;
+	font-family:Microsoft Sans Serif;
+	text-align: center;
+}
+.para-features{
+	color:#9AA5AA;
+	font-family:Microsoft Sans Serif;
+	text-align: center;
+}
+.header-center-title{
+	font-family:Microsoft Sans Serif;
+}
+.para-header4-title{
+	font-family:Microsoft Sans Serif;
+	color:#333333;
+}
+#footer{
+	margin-top:6%;
+	background-size:cover;
+	background-image:url('../images/footer-bg.jpg');
+}
+.footer-title{
+	color:#68737B;
+	font-family:Microsoft Sans Serif;
+}
+ul{ // use to align the text of footer-title and ul tags.
+	 margin:0;
+	 padding:0;
+}
+.inline-footer{
+	color:#ffffff;
+	font-family:Microsoft Sans Serif;
+	text-decoration: none;
+	display:inline-block;
+	list-style-type: none;
+}
+.chat-w-us{
+	padding:5px;
+	width:70%;
+	color:#ffffff;
+	background-color:#2CC76A;
+	border:1px solid #2CC76A;
+	border-radius:2px;
+}
+.copyright{
+	color:#68737B;
+	font-family:Microsoft Sans Serif;
+}
+
+/* Pricing css*/
+#pricing-title{
+	margin-top:60px;
+	text-align:center;
+	font-family:Microsoft Sans Serif;
+}
+.plans-pricing{
+	color:#333333;
+}
+.para-plans-pricing{
+	color:#9AA5AA;
+}
+#standard{
+	margin-top:6%;
+	text-align: center;
+}
+
+.dark-color-boxes{
+	background-color:#232A31;
+	color:#ffffff;
+	padding:2%;
+	font-family:Microsoft Sans Serif;
+}
+.per-month{
+	color:#9AA5AA;
+	line-height:5% ;
+}
+.gray-boxes{
+	background-color:#9AA5AA;
+	color:#000;
+	height:300px;
+	font-family:Microsoft Sans Serif;
+	padding:2%;
+	line-height:200%;/*to have maximize the space of the paragraphs*/
+}
+.price-signup{
+	color:#ffffff;
+	font-family:Microsoft Sans Serif;
+	padding:7%;
+	width:100%;
+	background-color:#2CC76A;
+	border:1px solid #2CC76A;
+}
+.price-signup:hover{
+	background-color:#F45C57;
+	border:1px solid #F45C57;
+}
+
+@media screen and (max-width:900px){
+		.container{
+			width:100%;
+		}
+		.row{
+			display:block;
+		}
+}
