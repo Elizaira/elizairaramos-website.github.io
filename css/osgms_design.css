@@ -1,0 +1,143 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.parallax {
+    /* The image used */
+
+    background-image: url("../images/osgms_plmarxs2.png");
+    /* Set a specific height */
+    min-height: 700px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding:0;
+ /*   width: 100%;
+    max-width: 100%;
+    height: auto;*/
+
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("../OSGMS/choose_account.png");
+    /* Set a specific height */
+    min-height: 700px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.navbar{
+	background-color:#4f4f4f;
+	border:0;
+	border-bottom:5px solid #0a6b2c;
+	padding:.5%;
+  margin-bottom: 0px;
+
+	/*font-family: 'Pacifico', Helvetica, sans-serif;*/
+}
+/*title in the left side*/
+.navbar-header .navbar-brand{
+	/*margin-top: -10px;*/
+	
+	/*font-family: 'Pacifico', Helvetica, sans-serif;*/
+    color:#ffffff;
+   /* text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);*/
+}
+.navbar-header .navbar-brand:hover{
+	color:#ffffff;
+}
+
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+/*	font-style:bold;*/
+}
+	.navbar-default .navbar-nav > .active > a, focus {
+	/*font-style:bold;*/
+}
+	.navbar-default .navbar-nav > li > a:hover, 
+	.navbar-default .navbar-nav > li > a:focus {
+	color:#ffffff;
+	
+
+}
+/*for changing font in navbar*/
+	.navbar-default .navbar-nav >li>a{
+	/*color:#323233; darkgray*/
+	color:#ffffff;
+	font-size:16px;
+}
+
+.col-sm-6{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#icon{
+  width:150px;
+  height:150px;
+  padding:0;
+  margin:0;
+
+/*  display:inline-block;*/
+}
+p{
+  font-size: 18px;
+  text-align: justify;
+}
+
+#img_carousel{
+  width:500px;
+  height:250px;
+}
+
+
+
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+/*.carousel-section{
+  margin: 20px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* https://internetingishard.com/html-and-css/responsive-images/ */
+@media screen and (max-width: 768px){
+.parallax {
+/*  background-attachment: inherit;*/
+margin:0;
+padding-top:0;
+min-height: 450px;
+background-attachment: fixed!important;
+overflow:hidden;
+  }
+
+
+}

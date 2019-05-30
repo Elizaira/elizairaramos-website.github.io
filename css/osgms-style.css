@@ -1,0 +1,152 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.navbar{
+	background-color:#4f4f4f;
+	border:0;
+	border-bottom:5px solid #0a6b2c;
+	padding:.5%;
+ 	margin-bottom: 0px;
+
+	/*font-family: 'Pacifico', Helvetica, sans-serif;*/
+}
+/*title in the left side*/
+.navbar-header .navbar-brand{
+	/*margin-top: -10px;*/
+	
+	/*font-family: 'Pacifico', Helvetica, sans-serif;*/
+    color:#ffffff;
+   /* text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);*/
+}
+.navbar-header .navbar-brand:hover{
+	color:#ffffff;
+}
+
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+/*	font-style:bold;*/
+}
+	.navbar-default .navbar-nav > .active > a, focus {
+	/*font-style:bold;*/
+}
+	.navbar-default .navbar-nav > li > a:hover, 
+	.navbar-default .navbar-nav > li > a:focus {
+	color:#ffffff;
+	
+
+}
+/*for changing font in navbar*/
+	.navbar-default .navbar-nav >li>a{
+	/*color:#323233; darkgray*/
+	color:#ffffff;
+	font-size:16px;
+}
+
+.col-sm-6{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#icon{
+  width:150px;
+  height:150px;
+  padding:0;
+  margin:0;
+
+/*  display:inline-block;*/
+}
+p{
+  font-size: 18px;
+  text-align: justify;
+}
+a:hover{
+	text-decoration: none;
+	color:#000;
+}
+
+#img_screenshot{
+	width:350px;
+	height:250px;
+	border: 3px solid white;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+	/*css styling images: image hover relay*/
+	opacity: 1;
+ 	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+  	backface-visibility: hidden;
+
+}
+.hover_zoom{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-decoration: none;
+
+}
+.scr_img:hover .hover_zoom{
+ opacity: 1;
+}
+
+#img_screenshot:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+/*to have white image opacity when image is hover*/
+  opacity: 0.7;
+}
+
+
+
+.screenshot-image{
+	margin-top: 9%;
+	margin-bottom: 6%;
+
+}
+.screenshot-margin{
+	margin-top:2%;
+}
+.title{
+	color:#0a6b2c ;
+	font-family: Impact, Charcoal, sans-serif;
+	margin-top: 6%;
+	margin-bottom:3%;
+	text-shadow: 1px 1px #000;
+	letter-spacing:2px;
+}
+.glyphicon-zoom-in{
+	font-size: 50px;
+	color:#adadad;
+}
+.glyphicon-zoom-in:hover{
+	color:#4f4f4f;
+}
+
+footer{
+	margin-top: 2%;
+	padding:1%;
+	border-top: 5px solid #0a6b2c;
+	background-color:#4f4f4f;
+	color:#ffffff;
+	text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+.carousel-section{
+	margin-top: 100px;
+}
+
+
+}

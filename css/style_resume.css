@@ -1,0 +1,404 @@
+body{
+	margin:0;
+	padding:0;
+}
+.navbar{
+	background-color: #ffffff;
+	border:0;
+	color:#08162d;
+	padding:1%;
+	/*font-family: 'Pacifico', Helvetica, sans-serif;*/
+}
+/*title in the left side*/
+.navbar-header .navbar-brand{
+	/*margin-top: -10px;*/
+	font-size:30px;	
+	/*font-family: 'Pacifico', Helvetica, sans-serif;*/
+    color:#08162d;
+   /* text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);*/
+}
+.navbar-header .navbar-brand:hover{
+/*	color:#000;*/
+}
+
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	font-style:bold;
+}
+	.navbar-default .navbar-nav > .active > a, focus {
+	font-style:bold;
+}
+	.navbar-default .navbar-nav > li > a:hover, 
+	.navbar-default .navbar-nav > li > a:focus {
+	color:#08162d;
+	
+
+}
+/*for changing font in navbar*/
+	.navbar-default .navbar-nav >li>a{
+	/*color:#323233; darkgray*/
+	color:#08162d;
+	font-size:16px;
+}
+
+
+
+
+.header_title{
+	text-align: left;
+	margin-top: 70px;
+	margin-bottom: 18%;
+}
+.header_greetings{
+	font-family: 'Abril Fatface';
+	font-size: 80px;
+	color:#08162d;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 66.4px;
+}
+.sm_header_greetings{
+	letter-spacing:4px;
+	color:#08162d;
+	/*font-family: 'Pacifico', Helvetica, sans-serif;*/
+}
+#download_button{
+	color:#ffffff;
+	background-color:#08162d;
+	border:1px solid #08162d;
+	margin-top:25px;
+}
+#download_button:hover{
+	background-color:#ffffff;
+	border:1px solid #08162d;
+	color:#08162d;
+}
+#view_button{
+
+	color:#08162d;
+	background-color:#ffffff;
+	border:1px solid #08162d;
+	margin-top:25px;
+}
+#view_button:hover{
+
+	background-color:#08162d;
+	border:1px solid #08162d;
+	color:#ffffff;
+}
+
+.about_section{
+
+}
+
+.title_headings{
+	/*css skew one side*/
+	font-family: 'Abril Fatface';
+    color:#ffffff;
+	background-color:#08162d;
+	padding:2.5%;
+    margin: 0 0 0 -10px;
+    display:inline-block;
+    position: relative; 
+
+}
+.title_headings:after{
+	/*css skew one side*/
+	content: " ";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #08162d;
+    transform-origin: bottom left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+
+}
+
+.subtitle_headings{
+	color:#08162d;
+}
+.para_about{
+	color:#08162d;
+	font-size:20px;
+	margin-top:25px;
+	margin-left:-10px;
+	text-align: justify;
+	margin-bottom:300px;
+}
+.col-md-8{
+/*	border:1px solid #000;*/
+	margin-top: 90px;
+}
+.col-md-4{
+	/*border:1px solid #000;*/
+	margin-top: 70px;
+}
+
+/*.row{
+	display:flex;
+}
+for columns to align them base on the sizes you want
+.col{
+	margin-left:15px;
+	flex:1;
+}
+.col-6{
+	flex:6;
+}
+*/
+
+#my_image{
+	width: 228px;
+	height:228px;
+ 	margin: 1em auto;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-position: center center;
+ 	-webkit-border-radius: 99em;
+	-moz-border-radius: 99em;
+	border-radius: 99em;
+ 	border: 5px solid #eee;
+ 	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/meee.png");
+    /* Set a specific height */
+    min-height: 700px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#icon{
+	width:60px;
+	height:60px;
+	padding:0;
+	margin:0;
+	display:inline-block;
+}
+
+.paragraph{
+	text-align: justify;
+	color:#08162d;
+	font-size:18px;
+}
+.col-sm-6{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.porfolio_section{
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+.paragraph_portfolios{
+	margin-top:20px;
+	color:#08162d;
+	font-size:18px;
+	text-align: justify;
+}
+#pic_portfolio{
+	width:350px;
+	height:250px;
+	/*css styling images: image hover relay*/
+	opacity: 1;
+ 	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+  	backface-visibility: hidden;
+
+}
+.hover_opacity {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-decoration: none;
+
+}
+.hover_click{
+  background-color: #08162d;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 16px 32px;
+}
+/*.hover_click:hover{
+  background-color: #ffffff;
+  border:2px solid #08162d;
+  color: #08162d;
+  font-size: 17px;
+
+}*/
+
+a:hover{
+	text-decoration: none;
+	color:#ffffff;
+}
+.gallery:hover #pic_portfolio {
+/*  opacity: 0.4;
+  border:2px solid #08162d;*/
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+
+/*
+.gallery #pic_portfolio{
+	
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}*/
+
+.gallery:hover .hover_opacity {
+  opacity: 1;
+
+}
+/*.gallery{
+  position: relative;
+    max-width: 100%;
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+}*/
+
+
+.getintouch{
+	margin-top: 180px;
+}
+.contact_container{
+	border:1px solid #08162d;
+	padding:2%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#inputText{
+	width:120%;
+}
+.paragraph_contact{
+	color:#08162d;
+	font-size:18px;
+	margin-top: 10px;
+
+}
+#send_button{
+	margin-top: 10px;
+	background-color:#08162d;
+	padding:1%;
+	border-radius: 2px;
+	color:#ffffff;
+	border:1px solid #08162d;
+	width:80px;
+}
+#send_button:hover{
+	background-color:#0a1d3d;
+}
+
+/*google map*/
+.mapouter{overflow:hidden;height:174px;width:489px;}.gmap_canvas {background:none!important;height:174px;width:489px;}
+
+#contact_icon{
+	width:35px;
+	height:35px;
+
+	position:relative;
+}
+
+
+.contact_paragraph{
+	font-size:16px;
+	color:#08162d;
+}
+
+footer{
+	background-color:#08162d;
+	margin-top:90px;
+	padding:2%;
+	text-align: center;
+	color:#ffffff;
+}
+.footer_name{
+	font-family: 'Abril Fatface';
+	letter-spacing:3px;
+
+}
+.transbox{
+	 background-color:hsla(220,40%,70%,0.3);
+	 opacity: 0.9;
+  	filter: alpha(opacity=60); /* For IE8 and earlier */
+  	padding:2%;
+}
+
+@media screen and (max-width: 768px){
+	.header_title{
+		margin-top: 80px;
+		margin-bottom: 100px;
+	}
+	.header_greetings{
+		font-size:80px;
+	}
+	.parallax{
+		min-height: 400px; 
+		min-width: 50px;
+	}
+	.title_headings{
+		font-size:30px;
+	}
+	#my_image{
+		margin-left:20px;
+	}
+	.para_about{
+		font-size:18px;
+		margin-bottom: 50px;
+	}
+	.col-md-8{
+	margin-top: 20px;
+	}
+	.col-md-4{
+	margin-top: 30px;
+	}
+	.skillsection{
+		margin-left:10px;
+	}
+	.paragraph{
+		font-size:18px;
+
+	}
+	.subtitle_headings{
+		font-size:25px;
+	}
+	.col-sm-6{
+		width:95%;
+	}
+	#inputText{
+		width:100%;
+	}
+	.mapouter{
+		width: 100%;
+	}
+	.contact_paragraph{
+		margin-left: 10px;
+	}
+
+}
